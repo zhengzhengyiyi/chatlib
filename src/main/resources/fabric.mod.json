@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "chatlib",
+	"version": "${version}",
+	"name": "chatlib",
+	"description": "a ai chat lib",
+	"authors": [
+		"zhengzhengyiyi"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/chatlib/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"io.github.zhengzhengyiyi.ChatlibClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "chatlib.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
